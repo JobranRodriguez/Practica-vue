@@ -15,13 +15,16 @@
 </head>
 <body>
     <div id="app">
+        {{ pageTitle }}
 
+        {{ content }}
     </div>
     <script>
         Vue.createApp({
             data() {
                 return {
-                    
+                    pageTitle:'Welcome to',
+                    'content:"esta es una pagina hecha con vue'
                 }
         }
     }).mount('#app');
