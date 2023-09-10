@@ -7,6 +7,14 @@
   <title>Document</title>
 </head>
 <body>
+  <div id='app'>
+    {{ prueba }}
+  </div>
+  Vue.createApp(
+    data:{
+    prueba:'hola'
+    }
+  ).mount('#app');
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </body>
 </html>
