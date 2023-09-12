@@ -19,23 +19,18 @@
             {{ pageTitle }}
         </h1>
 
-        {{ content }}
+        <h5>{{ content }}</h5>
     </div>
     <script>
-        Vue.createApp({
-            data() {
-                return {
-                    pageTitle:'Welcome to',
-                    content:'esta es una pagina hecha con vue'
+        const app = {
+            data(){
+                return{
+                    pageTitle:"pagina de prueba",
+                    content:"Esta es un nueva pagina de prueba"
                 }
-        },
-        methods: {
-            changeTitle(title){
-                this.pageTitle = title;
             }
-        },
-        watch() {}
-    }).mount('#app');
+        }
+        Vue.createApp(app).mount('#app');
     </script>
 </body>
 </html>
