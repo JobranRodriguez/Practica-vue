@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 
-    <!-- css bootstrap 5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-        
-    <!-- vue 3 nueva-->
- <script src="https://unpkg.com/vue@3"></script> 
+<!-- css bootstrap 5.0.2 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 
-    <!-- vue 2.0.3 version antigua-->
-    <!-- vue 2 -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script> -->
-    
-    <!--  -->
+<!-- vue 3 nueva-->
+<script src="https://unpkg.com/vue@3"></script> 
+
+<!-- vue 2.0.3 version antigua-->
+<!-- vue 2 -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script> -->
+
+<!--  -->
 </head>
 <body>
-    <!-- Mi Html -->
-    <div id="appDiv" class="container">
-        <h1>
-            {{ pageTitle }}
-        </h1>
-        <h5>{{ content }}</h5>
-        {{ pagina }}
-    </div>
+<!-- Mi Html -->
+<div id="appDiv" class="container">
+<h1>
+{{ pageTitle }}
+</h1>
+<h5>{{ content }}</h5>
+{{ pagina }}
+</div>
+
+<!--  -->
+
+<!-- MI script -->
+<!-- vue@3 -->
+<script>
+
+const constApp = {
+  data(){
+    return{
+      pageTitle:"pagina de prueba",
+      content:"Esta es un nueva pagina de prueba",
+      pagina:"aja"
+    }
+  },
+  methods:{
     
-    <!--  -->
-
-    <!-- MI script -->
-    <!-- vue@3 -->
-    <script>
-                    
-        const constApp = {
-            data(){
-                return{
-                    pageTitle:"pagina de prueba",
-                    content:"Esta es un nueva pagina de prueba",
-                    pagina:"aja"
-                }
-            },
-            methods:{
-
-            },
-            computed:{
-
-            },
-            watch: {
-
-            }  
-        }
-
-    Vue.createApp(constApp).mount('#appDiv');
-    </script>
-
-    <!-- /* vue@2.0.3 */  -->
-
-    <script>    
-    /* const app = new Vue({
-        el:'#appDiv',
-            data:{
-                pageTitle:'hola',
-                content:'contenido'
-            }
-    }) */
-    </script>
+  },
+  computed:{
     
+  },
+  watch: {
+    
+  }  
+}
+Vue.createApp(constApp).mount('#appDiv');
+</script>
+<!-- /* vue@2.0.3 */  -->
+<script>    
+/* const app = new Vue({
+el:'#appDiv',
+data:{
+pageTitle:'hola',
+content:'contenido'
+}
+}) */
+</script>
+
 </body>
 </html>
